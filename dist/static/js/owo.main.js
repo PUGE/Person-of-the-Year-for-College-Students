@@ -1,5 +1,5 @@
 // build by owo frame!
-// Fri May 31 2019 12:52:09 GMT+0800 (GMT+08:00)
+// Fri May 31 2019 13:57:58 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -9,6 +9,12 @@ window.owo = {
     "home": {
       "created": function created() {},
       "close": function close() {}
+    },
+    "copyright": {
+      "prop": {
+        "name": "copyright",
+        "src": "https://owo.ink/public/4f7d8061c6cb1d1c799df8844777b2fd.page"
+      }
     }
   },
   // 页面默认入口
