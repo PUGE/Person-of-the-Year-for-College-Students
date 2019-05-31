@@ -1,0 +1,90 @@
+12:51:10.301 DEBUG 获取到配置信息: 
+12:51:10.301 DEBUG {"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false,"root":"/src","entry":"home","title":"页面","outFolder":"./dist","resourceFolder":"./src/resource","headList":[{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}],"scriptList":[{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}],"styleList":[{"name":"main","src":"./src/main.css","resource":true}],"pageList":[{"main":true,"isPage":true,"name":"home","src":"./src/page/home.page","temple":"<temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"}],"dev":{"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false},"build":{"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false}}} 
+12:51:10.301 INFO  --------------------------- 开始编译 --------------------------- 
+12:51:10.301 INFO  程序运行目录: D:\work\Person of the Year for College Students 
+12:51:10.301 INFO  首次启动! 
+12:51:10.301 INFO  生成版本号: zl7812pw5h 
+12:51:10.301 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist 
+12:51:10.302 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist 
+12:51:10.302 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static 
+12:51:10.302 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static 
+12:51:10.302 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+12:51:10.302 DEBUG 读取网页标题: 页面 
+12:51:10.302 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}] 
+12:51:10.303 INFO  文件夹不存在: D:\work\Person of the Year for College Students\owo_modules 
+12:51:10.303 INFO  创建文件夹: D:\work\Person of the Year for College Students\owo_modules 
+12:51:10.303 INFO  开始处理模块: home 
+12:51:10.304 DEBUG 处理模板: ./src/page/home.page 
+12:51:10.391 DEBUG 缓存模板: home./src/page/home.page 
+12:51:10.391 DEBUG 模板home处理用时: 87 毫秒! 
+12:51:10.391 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\resource 
+12:51:10.392 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\resource 
+12:51:10.392 INFO  css中的资源处理完毕! 
+12:51:10.392 DEBUG 使用postcss处理样式，使用了2个插件! 
+12:51:10.402 INFO  正在处理script! 
+12:51:10.403 INFO  工程中只有一个页面! 
+12:51:10.403 DEBUG 页面中不包含切换动画! 
+12:51:11.892 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\js 
+12:51:11.892 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\js 
+12:51:11.901 INFO  js中的资源处理完毕! 
+12:51:11.902 INFO  读取文件: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+12:51:11.903 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+12:51:11.903 DEBUG 外部脚本数量: 1 
+12:51:11.903 DEBUG 处理脚本: jquery1.11.0 
+12:51:11.903 DEBUG 网络脚本: jquery1.11.0 
+12:51:11.903 DEBUG 完成外部脚本引用处理! 
+12:51:11.903 DEBUG 输出scriptData 
+12:51:11.903 DEBUG 判断是否可以输出Html! 
+12:51:11.903 DEBUG 还有没有经过处理的资源! 
+12:51:11.903 INFO  监控文件夹变化: D:\work\Person of the Year for College Students\src 
+12:51:11.915 INFO  服务器运行在: 127.0.0.1:8000 
+12:51:12.075 INFO  使用postcss处理完毕! 用时: 1683 毫秒 
+12:51:12.075 DEBUG 需要经过特殊处理的css: [["[template=home] .home:",".home[template=home]:"],["[template=home] .home ",".home[template=home] "],["[template=home] .home{",".home[template=home]{"],["[template=home] div:","div[template=home]:"],["[template=home] div ","div[template=home] "],["[template=home] div{","div[template=home]{"]] 
+12:51:12.075 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\css 
+12:51:12.076 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\css 
+12:51:12.076 INFO  开始处理附属css中的资源 
+12:51:12.076 INFO  附属css中的资源处理完毕! 
+12:51:12.076 DEBUG 判断是否可以输出Html! 
+12:51:12.076 DEBUG 准备输出html! 
+12:51:12.076 DEBUG 开始美化html 
+12:51:12.086 INFO  发送重新页面需要刷新命令! 
+12:51:12.155 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\owo.main.css 
+12:51:12.155 INFO  读取成功: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+12:51:12.155 INFO  读取成功: D:\work\Person of the Year for College Students\src\main.css 
+12:51:12.156 DEBUG 处理资源: D:\work\Person of the Year for College Students\src\resource\bg.jpg 
+12:51:12.163 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\js\autoReload.js 
+12:51:12.164 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\main.css 
+12:51:12.243 DEBUG 文件处理成功: 
+12:51:12.244 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\bg.jpg 
+12:52:09.703 INFO  file change: D:\work\Person of the Year for College Students\src\resource\bg.jpg 
+12:52:09.704 INFO  --------------------------- 开始编译 --------------------------- 
+12:52:09.704 INFO  程序运行目录: D:\work\Person of the Year for College Students 
+12:52:09.704 INFO  刷新模式,变化目录: D:\work\Person of the Year for College Students\src\resource\bg.jpg 
+12:52:09.704 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+12:52:09.704 DEBUG 读取网页标题: 页面 
+12:52:09.704 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}] 
+12:52:09.704 INFO  开始处理模块: home 
+12:52:09.704 DEBUG 处理模板: ./src/page/home.page 
+12:52:09.709 DEBUG 缓存模板: home./src/page/home.page 
+12:52:09.709 DEBUG 模板home处理用时: 5 毫秒! 
+12:52:09.710 INFO  css中的资源处理完毕! 
+12:52:09.710 DEBUG 使用postcss处理样式，使用了2个插件! 
+12:52:09.710 INFO  正在处理script! 
+12:52:09.711 INFO  工程中只有一个页面! 
+12:52:09.711 DEBUG 页面中不包含切换动画! 
+12:52:09.908 INFO  js中的资源处理完毕! 
+12:52:09.909 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+12:52:09.909 DEBUG 外部脚本数量: 1 
+12:52:09.909 DEBUG 处理脚本: jquery1.11.0 
+12:52:09.909 DEBUG 网络脚本: jquery1.11.0 
+12:52:09.909 DEBUG 完成外部脚本引用处理! 
+12:52:09.909 DEBUG 输出scriptData 
+12:52:09.909 DEBUG 判断是否可以输出Html! 
+12:52:09.909 DEBUG 还有没有经过处理的资源! 
+12:52:10.022 INFO  使用postcss处理完毕! 用时: 312 毫秒 
+12:52:10.022 DEBUG 需要经过特殊处理的css: [["[template=home] .home:",".home[template=home]:"],["[template=home] .home ",".home[template=home] "],["[template=home] .home{",".home[template=home]{"],["[template=home] div:","div[template=home]:"],["[template=home] div ","div[template=home] "],["[template=home] div{","div[template=home]{"]] 
+12:52:10.022 DEBUG 判断是否可以输出Html! 
+12:52:10.022 DEBUG 准备输出html! 
+12:52:10.022 DEBUG 开始美化html 
+12:52:10.026 INFO  发送重新页面需要刷新命令! 
+12:52:10.027 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\owo.main.css 

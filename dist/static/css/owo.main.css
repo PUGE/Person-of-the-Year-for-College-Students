@@ -1,0 +1,35 @@
+body, html, .ox {
+  padding: 0;
+  margin: 0;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+a:link, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
