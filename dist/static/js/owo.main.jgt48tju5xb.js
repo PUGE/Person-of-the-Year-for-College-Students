@@ -1,5 +1,5 @@
 // build by owo frame!
-// Fri May 31 2019 13:59:59 GMT+0800 (GMT+08:00)
+// Mon Jun 03 2019 09:23:53 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -10,12 +10,7 @@ window.owo = {
       "created": function created() {},
       "close": function close() {}
     },
-    "copyright": {
-      "prop": {
-        "name": "copyright",
-        "src": "https://owo.ink/public/4f7d8061c6cb1d1c799df8844777b2fd.page"
-      }
-    }
+    "copyright": {}
   },
   // 页面默认入口
   entry: "home"
@@ -40,7 +35,7 @@ for(var key in newPageFunction.template){var templateScript=newPageFunction.temp
 var domList=document.querySelectorAll('[template="'+key+'"]');// 有时候在更改html时会将某些块进行删除
 if(domList.length==0){console.info('无法找到页面组件:'+key);}// console.log(domList.length)
 for(var ind=0;ind<domList.length;ind++){// 为模板注入运行环境
-templateScript.created.apply(_owo.assign(newPageFunction.template[key],{$el:domList[ind],data:templateScript.data,activePage:window.owo.activePage}));}}}};// owo-name处理
+templateScript.created.apply(_owo.assign(newPageFunction.template[key],{$el:entryDom,$target:domList[ind],data:templateScript.data,activePage:window.owo.activePage}));}}}};// owo-name处理
 _owo.handleEvent=function(tempDom,templateName){// console.log(templateName)
 var activePage=window.owo.script[owo.activePage];if(tempDom.attributes){for(var ind=0;ind<tempDom.attributes.length;ind++){var attribute=tempDom.attributes[ind];// 判断是否为owo的事件
 // ie不支持startsWith
@@ -67,12 +62,7 @@ newPageFunction.$el=this;newPageFunction.$event=event;newPageFunction[eventForCo
 eval(eventForCopy);}};}}}}}if(tempDom.children){// 递归处理所有子Dom结点
 for(var i=0;i<tempDom.children.length;i++){var childrenDom=tempDom.children[i];// console.log(childrenDom)
 var newTemplateName=templateName;if(tempDom.attributes['template']&&tempDom.attributes['template'].textContent){newTemplateName=tempDom.attributes['template'].textContent;}// 待修复，多页面情况下可能判断不了是否是页面
-if(newTemplateName===owo.entry){_owo.handleEvent(childrenDom);}else{_owo.handleEvent(childrenDom,newTemplateName);}}}else{console.info('元素不存在子节点!');console.info(tempDom);}};// 便捷选择器
-if(window.jQuery==undefined){window.$=function(query){var type=_typeof(query);switch(type){// 如果是一个函数,那么代表这个函数需要在页面加载完毕后运行
-case'function':{setTimeout(function(){// 将需要运行的函数添加到待运行队列中
-if(window.owo.state.created==undefined)window.owo.state.created=[];window.owo.state.created.push(query);// 如果页面已经处于准备就绪状态,那么直接运行代码
-if(window.owo.state.isRrady){query();}},1000);break;}case'string':{var domList=document.querySelectorAll(query);return domList?domList:[];}}};}else{// 因为jquery没有foreach方法 所以需要给他加上
-jQuery.fn.forEach=function(objec){for(var index=0;index<this.length;index++){var element=this[index];objec(element);}};}// 跳转到指定页面
+if(newTemplateName===owo.entry){_owo.handleEvent(childrenDom);}else{_owo.handleEvent(childrenDom,newTemplateName);}}}else{console.info('元素不存在子节点!');console.info(tempDom);}};// 跳转到指定页面
 function $go(pageName,inAnimation,outAnimation,param){owo.state.animation={"in":inAnimation,"out":outAnimation};var paramString='';if(param&&_typeof(param)=='object'){paramString+='?';// 生成URL参数
 for(var paramKey in param){paramString+=paramKey+'='+param[paramKey]+'&';}// 去掉尾端的&
 paramString=paramString.slice(0,-1);}window.location.href=paramString+"#"+pageName;}function $change(key,value){// 更改对应的data

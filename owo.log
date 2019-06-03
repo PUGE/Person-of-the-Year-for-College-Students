@@ -1,69 +1,69 @@
-13:59:58.371 DEBUG 获取到配置信息: 
-13:59:58.371 DEBUG {"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false},"root":"/src","entry":"home","title":"页面","outFolder":"./dist","resourceFolder":"./src/resource","headList":[{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}],"scriptList":[{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}],"styleList":[{"name":"main","src":"./src/main.css","resource":true}],"pageList":[{"main":true,"isPage":true,"name":"home","src":"./src/page/home.page","temple":"<temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"}],"dev":{"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false},"build":{"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false}}} 
-13:59:58.371 INFO  --------------------------- 开始编译 --------------------------- 
-13:59:58.371 INFO  程序运行目录: D:\work\Person of the Year for College Students 
-13:59:58.371 INFO  首次启动! 
-13:59:58.371 INFO  生成版本号: sp3kxc5ryj 
-13:59:58.377 INFO  清理资源文件夹: D:\work\Person of the Year for College Students\dist\static 
-13:59:58.378 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static 
-13:59:58.378 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static 
-13:59:58.378 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-13:59:58.378 DEBUG 读取网页标题: 页面 
-13:59:58.378 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}] 
-13:59:58.379 INFO  开始处理模块: home 
-13:59:58.379 DEBUG 处理模板: ./src/page/home.page 
-13:59:58.416 INFO  开始处理模块: copyright 
-13:59:58.416 DEBUG 处理模板: https://owo.ink/public/4f7d8061c6cb1d1c799df8844777b2fd.page 
-13:59:58.416 DEBUG 使用文件缓存:D:\work\Person of the Year for College Students\owo_modules\9f2bf88e410a78d3ab27252061c78956.owo 
-13:59:58.416 INFO  模块: copyright 不包含script 
-13:59:58.423 DEBUG 缓存模板: copyrighthttps://owo.ink/public/4f7d8061c6cb1d1c799df8844777b2fd.page 
-13:59:58.423 DEBUG 模板copyright处理用时: 7 毫秒! 
-13:59:58.520 DEBUG 缓存模板: home./src/page/home.page 
-13:59:58.520 DEBUG 模板home处理用时: 141 毫秒! 
-13:59:58.521 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\resource 
-13:59:58.521 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\resource 
-13:59:58.522 DEBUG 处理资源: D:\work\Person of the Year for College Students\src\resource\ring.png,D:\work\Person of the Year for College Students\src\resource\logo-bar.png 
-13:59:58.523 INFO  css中的资源处理完毕! 
-13:59:58.523 DEBUG 使用postcss处理样式，使用了3个插件! 
-13:59:58.539 INFO  正在处理script! 
-13:59:58.539 INFO  工程中只有一个页面! 
-13:59:58.540 DEBUG 页面中不包含切换动画! 
-13:59:59.391 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\js 
-13:59:59.392 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\js 
-13:59:59.402 INFO  js中的资源处理完毕! 
-13:59:59.403 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-13:59:59.403 DEBUG 外部脚本数量: 1 
-13:59:59.403 DEBUG 处理脚本: jquery1.11.0 
-13:59:59.403 DEBUG 网络脚本: jquery1.11.0 
-13:59:59.403 DEBUG 完成外部脚本引用处理! 
-13:59:59.403 DEBUG 输出scriptData 
-13:59:59.403 DEBUG 判断是否可以输出Html! 
-13:59:59.403 DEBUG 还有没有经过处理的资源! 
-14:00:03.441 INFO  使用postcss处理完毕! 用时: 4918 毫秒 
-14:00:03.441 DEBUG 需要经过特殊处理的css: [["[template=copyright] footer:","footer[template=copyright]:"],["[template=copyright] footer ","footer[template=copyright] "],["[template=copyright] footer{","footer[template=copyright]{"],["[template=home] .home:",".home[template=home]:"],["[template=home] .home ",".home[template=home] "],["[template=home] .home{",".home[template=home]{"],["[template=home] div:","div[template=home]:"],["[template=home] div ","div[template=home] "],["[template=home] div{","div[template=home]{"]] 
-14:00:03.441 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\css 
-14:00:03.442 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\css 
-14:00:03.442 INFO  开始处理附属css中的资源 
-14:00:03.442 INFO  附属css中的资源处理完毕! 
-14:00:03.442 DEBUG 判断是否可以输出Html! 
-14:00:03.442 DEBUG 准备输出html! 
-14:00:03.443 DEBUG base64处理文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
-14:00:03.443 DEBUG 开始美化html 
-14:00:03.460 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\owo.main.sp3kxc5ryj.css 
-14:00:03.461 INFO  读取成功: D:\work\Person of the Year for College Students\src\main.css 
-14:00:03.461 DEBUG 处理资源: D:\work\Person of the Year for College Students\src\resource\bg.jpg 
-14:00:03.463 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\main.css 
-14:00:03.533 DEBUG 文件处理成功: 
-14:00:03.533 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\bg.jpg 
-14:00:03.862 DEBUG 文件处理成功: 
-14:00:03.862 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\ring.png 
-14:00:03.862 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\logo-bar.png 
+09:23:52.141 DEBUG 获取到配置信息: 
+09:23:52.141 DEBUG {"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false},"root":"/src","entry":"home","title":"页面","outFolder":"./dist","resourceFolder":"./src/resource","headList":[{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}],"scriptList":[{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}],"styleList":[{"name":"main","src":"./src/main.css","resource":true}],"pageList":[{"main":true,"isPage":true,"name":"home","src":"./src/page/home.page","temple":"<temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"}],"dev":{"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false},"build":{"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false}}} 
+09:23:52.141 INFO  --------------------------- 开始编译 --------------------------- 
+09:23:52.141 INFO  程序运行目录: D:\work\Person of the Year for College Students 
+09:23:52.141 INFO  首次启动! 
+09:23:52.141 INFO  生成版本号: jgt48tju5xb 
+09:23:52.146 INFO  清理资源文件夹: D:\work\Person of the Year for College Students\dist\static 
+09:23:52.146 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static 
+09:23:52.146 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static 
+09:23:52.146 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+09:23:52.146 DEBUG 读取网页标题: 页面 
+09:23:52.146 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}] 
+09:23:52.147 INFO  开始处理模块: home 
+09:23:52.147 DEBUG 处理模板: ./src/page/home.page 
+09:23:52.183 INFO  开始处理模块: copyright 
+09:23:52.183 DEBUG 处理模板: https://owo.ink/public/4f7d8061c6cb1d1c799df8844777b2fd.page 
+09:23:52.183 DEBUG 使用文件缓存:D:\work\Person of the Year for College Students\owo_modules\9f2bf88e410a78d3ab27252061c78956.owo 
+09:23:52.183 INFO  模块: copyright 不包含script 
+09:23:52.191 DEBUG 缓存模板: copyrighthttps://owo.ink/public/4f7d8061c6cb1d1c799df8844777b2fd.page 
+09:23:52.192 DEBUG 模板copyright处理用时: 8 毫秒! 
+09:23:52.270 DEBUG 缓存模板: home./src/page/home.page 
+09:23:52.270 DEBUG 模板home处理用时: 123 毫秒! 
+09:23:52.271 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\resource 
+09:23:52.272 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\resource 
+09:23:52.272 DEBUG 处理资源: D:\work\Person of the Year for College Students\src\resource\ring.png,D:\work\Person of the Year for College Students\src\resource\logo-bar.png 
+09:23:52.274 INFO  css中的资源处理完毕! 
+09:23:52.274 DEBUG 使用postcss处理样式，使用了3个插件! 
+09:23:52.289 INFO  正在处理script! 
+09:23:52.290 INFO  工程中只有一个页面! 
+09:23:52.290 DEBUG 页面中不包含切换动画! 
+09:23:53.053 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\js 
+09:23:53.055 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\js 
+09:23:53.063 INFO  js中的资源处理完毕! 
+09:23:53.063 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+09:23:53.064 DEBUG 外部脚本数量: 1 
+09:23:53.064 DEBUG 处理脚本: jquery1.11.0 
+09:23:53.064 DEBUG 网络脚本: jquery1.11.0 
+09:23:53.064 DEBUG 完成外部脚本引用处理! 
+09:23:53.064 DEBUG 输出scriptData 
+09:23:53.064 DEBUG 判断是否可以输出Html! 
+09:23:53.064 DEBUG 还有没有经过处理的资源! 
+09:23:53.667 INFO  使用postcss处理完毕! 用时: 1393 毫秒 
+09:23:53.667 DEBUG 需要经过特殊处理的css: [["[template=copyright] footer:","footer[template=copyright]:"],["[template=copyright] footer ","footer[template=copyright] "],["[template=copyright] footer{","footer[template=copyright]{"],["[template=home] .home:",".home[template=home]:"],["[template=home] .home ",".home[template=home] "],["[template=home] .home{",".home[template=home]{"],["[template=home] div:","div[template=home]:"],["[template=home] div ","div[template=home] "],["[template=home] div{","div[template=home]{"]] 
+09:23:53.668 INFO  文件夹不存在: D:\work\Person of the Year for College Students\dist\static\css 
+09:23:53.668 INFO  创建文件夹: D:\work\Person of the Year for College Students\dist\static\css 
+09:23:53.668 INFO  开始处理附属css中的资源 
+09:23:53.668 INFO  附属css中的资源处理完毕! 
+09:23:53.668 DEBUG 判断是否可以输出Html! 
+09:23:53.669 DEBUG 准备输出html! 
+09:23:53.669 DEBUG base64处理文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 忽略文件: D:\work\Person of the Year for College Students\src\resource\people.jpg 
+09:23:53.669 DEBUG 开始美化html 
+09:23:53.684 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\owo.main.jgt48tju5xb.css 
+09:23:53.685 INFO  读取成功: D:\work\Person of the Year for College Students\src\main.css 
+09:23:53.685 DEBUG 处理资源: D:\work\Person of the Year for College Students\src\resource\bg.jpg 
+09:23:53.687 INFO  写入文件: D:\work\Person of the Year for College Students\dist\static\css\main.css 
+09:23:53.827 DEBUG 文件处理成功: 
+09:23:53.827 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\bg.jpg 
+09:23:54.286 DEBUG 文件处理成功: 
+09:23:54.286 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\ring.png 
+09:23:54.286 DEBUG D:\work\Person of the Year for College Students\dist\static\resource\logo-bar.png 
